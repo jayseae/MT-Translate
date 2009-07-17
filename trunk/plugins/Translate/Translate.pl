@@ -1,24 +1,22 @@
 # ===========================================================================
-# MT-Translate: Translate phrases inside MT templates.
-# A Plugin for Movable Type
+# A Movable Type plugin to translate phrases inside templates.
+# Copyright 2005 Everitz Consulting <everitz.com>.
 #
-# Release 1.0.0
-# January 26, 2005
+# This program is free software:  You may redistribute it and/or modify it
+# it under the terms of the Artistic License version 2 as published by the
+# Open Source Initiative.
 #
-# http://jayseae.cxliv.org/
-# http://www.amazon.com/o/registry/2Y29QET3Y472A/
+# This program is distributed in the hope that it will be useful but does
+# NOT INCLUDE ANY WARRANTY; Without even the implied warranty of FITNESS
+# FOR A PARTICULAR PURPOSE.
 #
-# If you find the software useful or even like it, then a simple 'thank you'
-# is always appreciated.  A reference back to me is even nicer.  If you find
-# a way to make money from the software, do what you feel is right.
-#
-# Copyright 2005, Chad Everett (software@jayseae.cxliv.org)
-# Licensed under the Open Software License version 2.1
+# You should have received a copy of the Artistic License with this program.
+# If not, see <http://www.opensource.org/licenses/artistic-license-2.0.php>.
 # ===========================================================================
 package MT::Plugin::Translate;
 
 use vars qw($VERSION);
-$VERSION = '1.0.0';
+$VERSION = '1.0.1';
 
 use strict;
 
@@ -29,8 +27,7 @@ if ($MT::VERSION =~ m(^3\.)) {
   use MT::Plugin;
   my $about = {
     name => 'MT-Translate '. $VERSION,
-    description => 'Translate phrases inside MT templates.',
-    doc_link => 'http://jayseae.cxliv.org/translate/'
+    description => 'Translate phrases inside templates.',
   }; 
   MT->add_plugin(new MT::Plugin($about));
 }
